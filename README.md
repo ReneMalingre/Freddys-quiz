@@ -1,1 +1,0 @@
-# JavaScript-Quiz-for-Beginners

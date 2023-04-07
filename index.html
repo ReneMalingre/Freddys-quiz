@@ -1,13 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="en"> 
+<head>
     <meta charset="UTF-8">
-    <title>Quiz</title>
-  </head>
-  <body>
-    <div id="quiz-container"></div>
-    <button id="start-timer">Start Timer</button>
-    <script src="quiz.js"></script>
-    <div id="timer"></div>
-  </body>
+    <meta name="viewport" content="width-device-width, initial-scale=1-0">
+    <title>JavaScript Quiz"</title>
+    <link rel="stylesheet" href="assets/style.css">
+        <!--using a web font here-->
+        <!-- <script src="https;//kit.fontawesome.com/a076d05399.js"></script> -->
+</head>
+<body>
+       <!-- button to Start the Quiz -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+       <!-- info box -->
+    <div class="info_box">
+        <div class="info_title">
+            <span>Rules of the game</span>
+        </div>
+        <div class="info_list">
+            <div class="info">Rule 1 is...<span>15 seconds </span>per each question.</div>
+            <div class="info">Rule 2 is...</div>
+            <div class="info">Rule 3 is...</div>
+            <div class="info">Rule 4 is...</div>
+            <div class="info">Rule 5 is...</div>
+            <div class="info">Last rule is...</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz box here -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">JavaScript Quiz</div>
+            <div class="timer">
+                <div class="time_text">Time left</div>
+                <div class="timer_sec">15</div>
+            </div>
+        </header>
+        <section>
+            <div class="que_text">
+                <span>Commonly used data types DO NOT include:?</span>
+            </div>
+            <div class="option_list">
+                <div class="option">
+                    <span>Strings</span>
+                    <div class="icon cross"><p>&#10060</p><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Booleans</span>
+                </div>
+                <div class="option">
+                    <span>Alerts</span>
+                    <div class="icon tick"><p>&#10004</p><i class="fas fa-check"></i></div>
+                </div>
+                <div class="option">
+                    <span>Numbers</span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Quiz Box Footer -->
+        <footer>
+            <div class="total_que">
+                <span><p>2</p>of<p>5</p>Questions</span>
+            </div>
+            <button class="next_btn">Next</button>
+
+        </footer>
+
+    </div>
+
+    <!-- Result box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"><p>&#128081</p></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <span>and sorry, you got only <p> 2</p> out of <p> 5</p></span>
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit</button>
+        </div>
+    </div>
+</body>
 </html>
