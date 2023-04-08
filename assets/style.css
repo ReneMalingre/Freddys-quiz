@@ -18,6 +18,14 @@ body{
     transform: translate(-50%, -50%);
     box-shadow: 0px 4px 8px 0 #777 , 
                 0px 6px 20px 0 #777;
+    transition: all 0.3 ease;
+}
+/* for the eventListener in js */
+.info_box.activeInfo, .quiz_box.activeQuiz{
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: (-50%, -50%) scale(1);
 }
 
 /* Styling the Start Quiz button */
@@ -80,6 +88,7 @@ body{
     margin: 0 5px;
     height: 40px;
     width: 100px;
+    outline: none;
     border: 1px solid transparent;
     border-radius: 7px;
     color: #fff;
