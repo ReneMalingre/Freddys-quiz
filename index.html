@@ -2,7 +2,8 @@
 <html lang="en"> 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1-0">
+    <!-- <meta name="viewport" content="width-device-width, initial-scale=1-0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Quiz"</title>
     <link rel="stylesheet" href="assets/style.css">
         <!--using a web font from a CDN here-->
@@ -36,6 +37,8 @@
             <div class="timer">
                 <div class="time_text">Time left</div>
                 <div class="timer_sec">15</div>
+                <div class="rene_time_text">Time left</div>
+                <div class="rene_timer_sec" id="rene-timer">15</div>
             </div>
             <div class="time_line"></div>
         </header>
@@ -66,6 +69,10 @@
         <div class="complete_text">You've completed the Quiz!</div>
         <div class="score_text">
             <!-- score result here -->
+        </div>
+        <div id="rene-score">
+            <!-- score result here -->
+
         </div>
         <div class="buttons">
             <button class="restart">Replay Quiz</button>

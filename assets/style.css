@@ -74,7 +74,17 @@ body{
     font-weight: 600;
     color: #007bff;
 }
+
+.info_title {
+    margin : 10px 20px;
+}
+
+.info {
+    margin : 0 20px;
+}
+
 .info_box .buttons{
+    margin-top: 10px;
     height: 60px;
     display: flex;
     align-items: center;
@@ -130,7 +140,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 145px;
+    width: 240px; /* rene edit */
 }
 .quiz_box header .timer .time_left_txt{
     font-weight: 400;
