@@ -5,24 +5,23 @@
     <meta name="viewport" content="width-device-width, initial-scale=1-0">
     <title>JavaScript Quiz"</title>
     <link rel="stylesheet" href="assets/style.css">
-        <!--using a web font here-->
-        <!-- <script src="https;//kit.fontawesome.com/a076d05399.js"></script> -->
+        <!--using a web font from a CDN here-->
 </head>
 <body>
        <!-- button to Start the Quiz -->
     <div class="start_btn"><button>Start Quiz</button></div>
-       <!-- info box -->
+       <!-- this is the info box -->
     <div class="info_box">
         <div class="info_title">
-            <span>Rules of the game</span>
+            <span>Rules of the game:</span>
         </div>
         <div class="info_list">
-            <div class="info">Rule 1 is...<span>15 seconds </span>per each question.</div>
-            <div class="info">Rule 2 is...</div>
-            <div class="info">Rule 3 is...</div>
-            <div class="info">Rule 4 is...</div>
-            <div class="info">Rule 5 is...</div>
-            <div class="info">Last rule is...</div>
+            <div class="info">Rule 1: you will have <span>15 seconds </span>per each question.</div>
+            <div class="info">Rule 2: your time starts from when you click the "Continue" button below.</div>
+            <div class="info">Rule 3: when you get a correct answer, points will be awarded to your final score.</div>
+            <div class="info">Rule 4: when you get a wrong answer, time will be deducted from your overall time.</div>
+            <div class="info">Rule 5: try to answer without looking up the question online</div>
+            <div class="info">Last rule is: HAVE FUN!</div>
         </div>
         <div class="buttons">
             <button class="quit">Exit</button>
@@ -30,7 +29,7 @@
         </div>
     </div>
 
-    <!-- Quiz box here -->
+    <!-- overall Quiz box here -->
     <div class="quiz_box">
         <header>
             <div class="title">JavaScript Quiz</div>
@@ -38,26 +37,14 @@
                 <div class="time_text">Time left</div>
                 <div class="timer_sec">15</div>
             </div>
+            <div class="time_line"></div>
         </header>
         <section>
             <div class="que_text">
-                <!-- <span>Commonly used data types DO NOT include:</span> -->
+                <!-- Here I've inserted question regarding JavaScript -->
             </div>
             <div class="option_list">
-                <!-- <div class="option">
-                    <span>Strings</span>
-                    <div class="icon cross"><p>&#10060</p><i class="fas fa-times"></i></div>
-                </div>
-                <div class="option">
-                    <span>Booleans</span>
-                </div>
-                <div class="option">
-                    <span>Alerts</span>
-                    <div class="icon tick"><p>&#10004</p><i class="fas fa-check"></i></div>
-                </div>
-                <div class="option">
-                    <span>Numbers</span>
-                </div> -->
+            <!-- options for the quiz to go here -->
             </div>
         </section>
 
@@ -65,11 +52,10 @@
         <!-- Quiz Box Footer -->
         <footer>
             <div class="total_que">
+                <!-- this is the question count -->
             </div>
             <button class="next_btn">Next</button>
-
         </footer>
-
     </div>
 
     <!-- Result box -->
@@ -79,7 +65,7 @@
         </div>
         <div class="complete_text">You've completed the Quiz!</div>
         <div class="score_text">
-            <span>and sorry, you got only <p> 2</p> out of <p> 5</p></span>
+            <!-- score result here -->
         </div>
         <div class="buttons">
             <button class="restart">Replay Quiz</button>
@@ -87,8 +73,8 @@
         </div>
     </div>
 
-    <script src="js/questions.js"></script> 
-    <script src="js/script.js"></script>
+    <script src="js/questions.js"></script> <!-- links the HTML to the js questions file -->
+    <script src="js/script.js"></script> <!-- links the HTML to the main js file for the whole Quiz-->
 
 </body>
 </html>
